@@ -66,7 +66,7 @@ const broadcast = (ws, message, includeSelf) => {
 
 /**
  * Sends a ping message to all connected clients every 50 seconds
- */
+ 
  const keepServerAlive = () => {
   keepAliveId = setInterval(() => {
     wss.clients.forEach((client) => {
@@ -76,7 +76,7 @@ const broadcast = (ws, message, includeSelf) => {
     });
   }, 50000);
 };
-
+*/
 
 app.get('/', (req, res) => {
     res.send('Hello World!');
